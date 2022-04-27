@@ -9,7 +9,7 @@
 <div>
 	<h2>Product List</h2>
 	<table cellpadding="10">
-		<tr>
+		<tr bgcolor = lightblue>
 			<td>Id</td>
 			<td>Name</td>
 			<td>Description</td>
@@ -19,7 +19,7 @@
 		</tr>
 		@foreach(var product in productList)
 		{
-			<tr>
+			<tr bgcolor = #D0ECE7>
 				<td>@product.Id</td>
 				<td>@product.Name</td>
 				<td>@product.Description</td>
@@ -28,7 +28,7 @@
 				<td>@product.TotalAmount</td>
 			</tr>
 		}
-		<tr>
+		<tr bgcolor = lightblue>
 			<td style="text-align:right", colspan="5"><strong>Grand Total</strong></td>
 			<td><strong>@grandTotal</strong></td>
 		</tr>
