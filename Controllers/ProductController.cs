@@ -12,7 +12,7 @@ namespace AspDotNet.LabExercise1.Controllers
         {
             _productService = productService;
         }
-        public IActionResult Index()
+        public IActionResult List()
         {
             ViewData["ProductList"] = _productService.GetCatalog();
             ViewData["Grandtotal"] = _productService.GetGrandTotal();
