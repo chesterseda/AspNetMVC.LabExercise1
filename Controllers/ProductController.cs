@@ -14,7 +14,7 @@ namespace AspDotNet.LabExercise1.Controllers
         }
         public IActionResult Index()
         {
-            ViewData["ProductList"] = _productService.GetAll();
+            ViewData["ProductList"] = _productService.GetCatalog();
             ViewData["Grandtotal"] = _productService.GetGrandTotal();
             return View();
         }

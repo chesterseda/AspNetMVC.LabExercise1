@@ -58,7 +58,7 @@ namespace AspDotNet.LabExercise1.Services
             });
         }
 
-        public List<Product> GetAll()
+        public List<Product> GetCatalog()
         {
             return products;
         }
